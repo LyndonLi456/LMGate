@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LMGate - LLM API Gateway</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <header class="header">
+    <h1>LMGate</h1>
+    <span class="subtitle">LLM API Gateway</span>
+    <nav class="tabs">
+      <button class="tab active" data-tab="dashboard">仪表盘</button>
+      <button class="tab" data-tab="providers">服务商管理</button>
+      <button class="tab" data-tab="models">模型列表</button>
+      <button class="tab" data-tab="settings">设置</button>
+    </nav>
+    <div class="status-bar">
+      <span id="healthStatus">● 运行中</span>
+      <span id="providerCount">0 服务商</span>
+    </div>
+  </header>
+  <main id="content"></main>
+</div>
+
+<!-- Modal container -->
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modalTitle"></h3>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
