@@ -19,8 +19,9 @@ CMakeFiles/
 cmake_install.cmake
 *.cmake
 
-# Config files (user-specific)
+# User data (contains API keys and usage records)
 config.json
+*.db
 
 # Archive files (keep only the release zip)
 *.zip
